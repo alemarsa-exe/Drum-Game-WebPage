@@ -16,15 +16,16 @@
         <nav>
             <a href="index.html"> <img src="images/DrumLogoBlanco.png" alt="drum-logo"> </a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <i class="fa fa-times" id="times" onclick="hideMenu()"></i> 
                 <ul>
-                    <li><a href="https://daniumm.github.io/" target="_blank">NUESTRA API</a></li>
-                    <li><a href="#.">LEADERBOARD</a></li>
-                    <li><a href="#.">INICIAR SESIÓN</a></li>
                     <li><a href="#.">DESCARGA</a></li>
+                    <li><a href="#.">INICIAR SESIÓN</a></li>
+                    <li><a href="#.">LEADERBOARD</a></li>
+                    <li><a href="https://daniumm.github.io/" target="_blank">NUESTRA API</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -114,7 +115,7 @@
     <!--Call to Action--->
     <section class="cta">
         <h1>Estamos Aquí Para Apoyarte</h1>
-        <a href="#." class="descarga-inline">CONTÁCTANOS</a>
+        <a href="contacto.html" class="descarga-inline">CONTÁCTANOS</a>
     </section>
     
     
@@ -131,12 +132,18 @@
 <!------JavaScript para activar menu------>
 <script>
     var navLinks = document.getElementById("navLinks");
+    var bars = document.getElementById("bars")
+    var times = document.getElementById("times")
+
 
     function showMenu(){
         navLinks.style.right = "0";
+        times.style.display = "";
     }
     function hideMenu(){
         navLinks.style.right = "-200px";
+        bars.style.display = "";
+
     }
 </script>
 
