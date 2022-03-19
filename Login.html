@@ -8,19 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Drum Game</title>
+    <title>Log in</title>
 </head>
-<body class="body-login">
-    <!---Sub-header
-    <section class="sub-header">
+<body class="all-body">
+
+    <!---Sub-header---> 
+    <section class="sub-header-sesion">
         <nav>
-            <a href="index.html"> <img src="images/DrumLogoBlanco.png" alt="drum-logo"> </a>
-            <div class="nav-links" id="navLinks">
+            <a href="index.html"> <img src="images/DrumLogo.png" alt="drum-logo"> </a>
+            <div class="nav-links a-in-subheader" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i> 
                 <ul>
-                    <li><a href="#.">DESCARGA</a></li>
+                    <li><a  href="#.">DESCARGA</a></li>
                     <li><a href="#.">LEADERBOARD</a></li>
-                    <li><a href="https://daniumm.github.io/" target="_blank">NUESTRA API</a></li>
+                    <li><a  href="https://daniumm.github.io/" target="_blank">NUESTRA API</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </div>
@@ -28,69 +29,71 @@
         </nav>
     </section>
 
-    --->
+    
+    <div class="body-login">
 
-    <div class="container-login">
-        <input type="checkbox" id="flip">
-        <div class="cover">
-            <div class="front">
-                <img src="images/mujer-baterista.jpg" alt="drummer">
-                <div class="text">
-                    <span class="text-1">Explora y revisita tus <br> mejores experiencias</span>
-                    <span class="text-2">Nos da gusto volver a verte</span>
+        <div class="container-login">
+            <div class="cover">
+                <div class="front">
+                    <img src="images/mujer-baterista.jpg" alt="drummer">
+                    <div class="text">
+                        <span class="text-1">Explora y revisita tus <br> mejores experiencias</span>
+                        <span class="text-2">Nos da gusto volver a verte</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <img class="backImg" src="images/baterista-blanco-y-negro.jpg" alt="drummer-black-and-white">
+                    <div class="text">
+                        <span class="text-1">Explora y revisita tus <br> mejores experiencias</span>
+                        <span class="text-2">Nos da gusto volver a verte</span>
+                    </div>
                 </div>
             </div>
-            <div class="back">
-                <img class="backImg" src="images/blakc-waves.jpg" alt="drummer-black-and-white">
-                <div class="text">
-                    <span class="text-1">Explora y revisita tus <br> mejores experiencias</span>
-                    <span class="text-2">Nos da gusto volver a verte</span>
+            <form action="#">
+                <div class="form-content">
+                    <div class="login-form">
+                        <div class="title">Iniciar sesión</div>
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Escribe tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Escribe tu contraseña" required>
+                            </div>
+                            <div class="text"><a href="#">¿Olvidaste tu contraseña?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Iniciar sesión">
+                            </div>
+                            <div class="text login-text">¿Aún no estás registrado? <a href="Signup.html">Regístrate</a></div>
+                        </div>
+                    </div>
+                    <div class="signup-form">
+                        <div class="title">Registrarse</div>
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Escribe tu usuario" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Escribe tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Escribe tu contraseña" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Registrarse">
+                            </div>
+                            <div class="text sign-up-text">¿Ya estás registrado? <label for="flip">Inicia sesión</label></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
-        <form action="#">
-            <div class="form-content">
-                <div class="login-form">
-                    <div class="title">Iniciar sesión</div>
-                    <div class="input-boxes">
-                        <div class="input-box">
-                            <i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="Escribe tu email" required>
-                        </div>
-                        <div class="input-box">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Escribe tu contraseña" required>
-                        </div>
-                        <div class="text"><a href="#">¿Olvidaste tu contraseña?</a></div>
-                        <div class="button input-box">
-                            <input type="submit" value="Iniciar sesión">
-                        </div>
-                        <div class="text login-text">¿No estás registrado? <label for="flip">Regístrate ahora</label></div>
-                    </div>
-                </div>
-                <div class="signup-form">
-                    <div class="title">Registrarse</div>
-                    <div class="input-boxes">
-                        <div class="input-box">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Escribe tu usuario" required>
-                        </div>
-                        <div class="input-box">
-                            <i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="Escribe tu email" required>
-                        </div>
-                        <div class="input-box">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Escribe tu contraseña" required>
-                        </div>
-                        <div class="button input-box">
-                            <input type="submit" value="Registrarse">
-                        </div>
-                        <div class="text sign-up-text">¿Ya estás registrado? <label for="flip">Inicia sesión</label></div>
-                    </div>
-                </div>
-            </div>
-        </form>
+
     </div>
 
 

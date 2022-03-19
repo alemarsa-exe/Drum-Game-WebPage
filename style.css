@@ -489,17 +489,55 @@ h3{
     color: #fff;
 }
 
-/*      //        //
-      // Login  //
-    //        //
+/*      //                //
+      // Login  y signup //
+    //                  //
 */
 
+
+
+        /*    //                               //
+            // Sub-header de login y signup //
+            //                             //
+        */
+
+.sub-header-sesion{
+    height: 15vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header-sesion h1{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.nav-links.a-in-subheader ul li a{
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (max-width: 700px){
+    .sub-header-sesion h1{
+        font-size: 40px;
+        margin-top: 150px;
+    }
+}
+
+.all-body{
+    background-image: url(images/windows11blanco.jpg);
+}
+
 .body-login{
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #Fff3f3;
+    
     padding: 30px;
 }
 
@@ -540,9 +578,9 @@ h3{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #Fff3f3;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     opacity: 0.5;
-    z-index: 101;
+    z-index: 100;
     transform: rotateY(180deg);
 }
 
@@ -586,6 +624,89 @@ h3{
 .cover .text .text-2{
     font-size: 15px;
 }
+
+                /*  Sign up */
+
+.body-login-2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/grey-background-shapes.jpg);
+    object-fit: cover;
+    padding: 30px;
+}
+
+.container-login .cover-1{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+.container-login .cover-1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #Fff3f3;
+    opacity: 0.1;
+    z-index: 100;
+}
+
+.container-login .cover-1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #Fff3f3;
+    opacity: 0.5;
+    z-index: 100;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+.container-login .cover-1 img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 12;
+    backface-visibility: hidden;
+}
+
+.container-login .cover-1 .text{
+    position: absolute;
+    z-index: 111;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+}
+
+.cover-1 .text .text-1,
+.cover-1 .text .text-2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.cover-1 .text .text-2{
+    font-size: 15px;
+}
+
+                /* todo */
 
 .container-login form{
     height: 100%;
@@ -705,3 +826,36 @@ form .form-content .sign-up-text{
     text-align: center;
     margin-top: 25px;
 }
+
+                /* Login */
+.text.login-text a:link{
+    text-decoration: none;
+    color: #2ba3ad
+}
+
+.text.login-text a:visited{
+    text-decoration: none;
+    color: #289099;
+
+}
+
+.text.login-text a:hover{
+    text-decoration: underline;
+}
+
+/* Sign-up */
+.text.sign-up-text a:link{
+    text-decoration: none;
+    color: #2ba3ad
+}
+
+.text.sign-up-text a:visited{
+    text-decoration: none;
+    color: #289099;
+
+}
+
+.text.sign-up-text a:hover{
+    text-decoration: underline;
+}
+
