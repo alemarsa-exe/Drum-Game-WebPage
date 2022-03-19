@@ -11,8 +11,57 @@
     <title>Log in</title>
 </head>
 
-<body>
-    
+<body class="body-leader">
+
+    <section class="sub-header-sesion leader">
+        <nav>
+            <a href="index.html"> <img src="images/DrumLogoBlanco.png" alt="drum-logo"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="#.">DESCARGA</a></li>
+                    <li><a href="leaderboards.html">LEADERBOARD</a></li>
+                    <li><a href="https://daniumm.github.io/" target="_blank">NUESTRA API</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="rankings">
+        <h1>Conoce a los mejores del juego</h1> 
+        <table class="content-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Usuario</th>
+                <th>Puntos</th>
+                <th>Minutos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Domenic87</td>
+                <td>110</td>
+                <td>3:12</td>
+              </tr>
+              <tr class="active-row">
+                <td>2</td>
+                <td>Sally</td>
+                <td>90</td>
+                <td>3:33</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>89</td>
+                <td>4:01</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 </body>
 
 
