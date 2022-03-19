@@ -532,6 +532,11 @@ h3{
     background-image: url(images/windows11blanco.jpg);
 }
 
+.all-body-2{
+    background-image: url(images/blakc-waves.jpg);
+    background-position:4000vw;
+}
+
 .body-login{
     min-height: 75vh;
     display: flex;
@@ -628,11 +633,10 @@ h3{
                 /*  Sign up */
 
 .body-login-2{
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(images/grey-background-shapes.jpg);
     object-fit: cover;
     padding: 30px;
 }
